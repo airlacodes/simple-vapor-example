@@ -4,14 +4,14 @@ import FluentSQLite
 final class Movie: Codable {
     var id: Int?
     var title: String
-    var imddUrl: URL
+    var imbdUrl: URL
 
-    init(title: String, imddUrl: URL) {
+    init(title: String, imbdUrl: URL) {
         self.title = title
-        self.imddUrl = imddUrl
+        self.imbdUrl = imbdUrl
     }
 }
 
 extension Movie: SQLiteModel {}
 extension Movie: Migration {}
-
+extension Movie: Content {}
