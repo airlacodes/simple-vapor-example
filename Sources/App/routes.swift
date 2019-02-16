@@ -11,4 +11,8 @@ public func routes(_ router: Router) throws {
             return movie.save(on: req)
         }
     }
+
+    router.get { req in
+        return "HEY THERE :)"
+    }
 }
